@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book - Recipes</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#fdfdfd; color:#333; line-height:1.6; padding:20px;}
+    header { background:#ff7043; color:white; padding:20px; text-align:center; border-radius:8px; margin-bottom:30px;}
+    header h1 { font-size:2.5em; margin-bottom:10px; }
+    nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    nav a.active { text-decoration:underline; }
+    main { padding:0 20px; }
+    main h2 { font-size:2em; text-align:center; margin-bottom:20px; }
+    label { font-weight:bold; display:block; margin-bottom:10px; text-align:center; }
+    select { padding:8px; font-size:1em; margin-bottom:30px; display:block; margin-left:auto; margin-right:auto; width:200px; }
+    .recipes { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .recipe-card { background:#fff3e0; border:1px solid #ffe0b2; border-radius:10px; padding:20px; box-shadow:0 2px 5px rgba(0,0,0,0.1); font-weight:bold; color:#e65100; }
+    .recipe-card h3 { font-size:1.5em; margin-bottom:10px; }
+    .recipe-card p { margin-bottom:8px; color:#333; font-weight:normal; }
+    footer { text-align:center; margin-top:40px; padding:20px; font-size:0.9em; color:#777; border-top:1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Book</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipes.html" class="active">Recipes</a>
+      <a href="ingredients.html">Ingredients</a>
+      <a href="tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <main class="recipe-list">
+    <h2>Recipes</h2>
+
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter">
+      <option value="all">All</option>
+      <option value="dessert">Dessert</option>
+      <option value="main">Main Course</option>
+      <option value="snack">Snack</option>
+    </select>
+
+    <div class="recipes">
+      <div class="recipe-card" data-category="dessert">
+        <h3>Chocolate Cake</h3>
+        <p>Rich chocolate cake with creamy frosting.</p>
+        <p><strong>Steps:</strong> Mix, bake, cool, frost.</p>
+      </div>
+      <div class="recipe-card" data-category="main">
+        <h3>Grilled Chicken</h3>
+        <p>Juicy grilled chicken with herbs.</p>
+        <p><strong>Steps:</strong> Marinate, grill, serve.</p>
+      </div>
+      <div class="recipe-card" data-category="snack">
+        <h3>Fruit Salad</h3>
+        <p>Fresh seasonal fruits tossed with honey.</p>
+        <p><strong>Steps:</strong> Chop, mix, serve.</p>
+      </div>
+      <div class="recipe-card" data-category="dessert">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Creamy homemade vanilla ice cream.</p>
+        <p><strong>Steps:</strong> Mix ingredients, churn, freeze.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Recipe Book. All rights reserved.
+  </footer>
+</body>
+</html>
