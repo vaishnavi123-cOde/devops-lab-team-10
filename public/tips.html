@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book - Tips</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#fdfdfd; color:#333; line-height:1.6; padding:20px;}
+    header { background:#ff7043; color:white; padding:20px; text-align:center; border-radius:8px; margin-bottom:30px;}
+    header h1 { font-size:2.5em; margin-bottom:10px; }
+    nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    nav a.active { text-decoration:underline; }
+    main { padding:0 20px; text-align:center; }
+    main h2 { font-size:2em; margin-bottom:15px; }
+    main p { margin-bottom:20px; color:#555; }
+    .tips-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px; }
+    .tip-card { background:#fff3e0; border:1px solid #ffe0b2; border-radius:10px; padding:20px; font-weight:bold; color:#e65100; box-shadow:0 2px 5px rgba(0,0,0,0.1); transition:0.3s; text-align:left; }
+    .tip-card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.15); }
+    footer { text-align:center; margin-top:40px; padding:20px; font-size:0.9em; color:#777; border-top:1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Book</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="ingredients.html">Ingredients</a>
+      <a href="tips.html" class="active">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cooking Tips</h2>
+    <p>Improve your cooking skills with these handy tips and tricks!</p>
+
+    <div class="tips-grid">
+      <div class="tip-card">Always preheat your oven before baking.</div>
+      <div class="tip-card">Use fresh ingredients for better flavor.</div>
+      <div class="tip-card">Read the entire recipe before starting.</div>
+      <div class="tip-card">Keep knives sharp for easier chopping.</div>
+      <div class="tip-card">Clean as you go to save time.</div>
+      <div class="tip-card">Use a timer to avoid overcooking.</div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Recipe Book. All rights reserved.
+  </footer>
+</body>
+</html>
