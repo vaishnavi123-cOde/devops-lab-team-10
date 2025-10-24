@@ -4,45 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-box {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .input-box label {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5563DE;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #3848C9;
+    }
+  </style>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-white to-blue-200 p-4">
-
-  <div class="w-full max-w-md bg-white shadow-xl rounded-2xl border border-gray-200 p-6">
-    <!-- Header -->
-    <div class="text-center space-y-2 mb-6">
-      <h1 class="text-2xl font-bold text-gray-800">Welcome Back 👋</h1>
-      <p class="text-gray-500 text-sm">Please sign in to your account</p>
-    </div>
-
-    <!-- Form -->
-    <form class="space-y-4">
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" placeholder="you@example.com" class="mt-1 w-full border rounded-md p-2 focus:ring-2 focus:ring-blue-400" required>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <div class="input-box">
+        <label>Username</label>
+        <input type="text" placeholder="Enter username" required>
       </div>
-
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Password</label>
-        <input type="password" placeholder="••••••••" class="mt-1 w-full border rounded-md p-2 focus:ring-2 focus:ring-blue-400" required>
+      <div class="input-box">
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
       </div>
-
-      <div class="flex items-center justify-between text-sm">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" id="remember" class="h-4 w-4">
-          <label for="remember" class="text-gray-600 cursor-pointer">Remember me</label>
-        </div>
-        <a href="#" class="text-blue-600 hover:underline">Forgot password?</a>
-      </div>
-
-      <button type="submit" class="w-full mt-2 bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">Login</button>
+      <button type="submit">Login</button>
     </form>
-
-    <!-- Footer -->
-    <p class="text-sm text-gray-500 text-center mt-4">
-      Don’t have an account? <a href="#" class="text-blue-600 hover:underline">Sign up</a>
-    </p>
   </div>
-
 </body>
 </html>
