@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book - Ingredients</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#fdfdfd; color:#333; line-height:1.6; padding:20px;}
+    header { background:#ff7043; color:white; padding:20px; text-align:center; border-radius:8px; margin-bottom:30px;}
+    header h1 { font-size:2.5em; margin-bottom:10px; }
+    nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    nav a.active { text-decoration:underline; }
+    main { padding:0 20px; text-align:center; }
+    main h2 { font-size:2em; margin-bottom:15px; }
+    .ingredients-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; margin-top:20px; }
+    .ingredient-card { background:#fff3e0; border:1px solid #ffe0b2; border-radius:10px; padding:20px; font-weight:bold; color:#e65100; box-shadow:0 2px 5px rgba(0,0,0,0.1); transition:0.3s; }
+    .ingredient-card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.15); }
+    footer { text-align:center; margin-top:40px; padding:20px; font-size:0.9em; color:#777; border-top:1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Book</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="ingredients.html" class="active">Ingredients</a>
+      <a href="tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Ingredients</h2>
+    <div class="ingredients-grid">
+      <div class="ingredient-card">Flour</div>
+      <div class="ingredient-card">Sugar</div>
+      <div class="ingredient-card">Eggs</div>
+      <div class="ingredient-card">Milk</div>
+      <div class="ingredient-card">Chocolate</div>
+      <div class="ingredient-card">Chicken</div>
+      <div class="ingredient-card">Vegetables</div>
+      <div class="ingredient-card">Fruits</div>
+      <div class="ingredient-card">Honey</div>
+      <div class="ingredient-card">Butter</div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Recipe Book. All rights reserved.
+  </footer>
+</body>
+</html>
